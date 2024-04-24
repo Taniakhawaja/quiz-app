@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <form action="" method="get">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="rollno">Roll Number:</label><br>
+            <input type="number" id="rollno" name="rollno"><br>
+
+            <label for="batch">Batch/Section:</label><br>
+            <select id="batch" name="batch" required>
+                <option value="">Select Batch/Section</option>
+                <option value="A">Batch A</option>
+                <option value="B">Batch B</option>
+                <option value="C">Batch C</option>
+                <option value="D">Batch D</option>
+            </select><br>
+
+            <input onclick="goToQuiz()" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
